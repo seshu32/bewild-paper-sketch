@@ -1,0 +1,40 @@
+/* ==========================================================================
+   In the news (media.html): every press mention, logo first.
+   ========================================================================== */
+.media-page { padding: clamp(36px, 6svh, 64px) var(--pad) var(--chap-pad); }
+.media-page h1 em { font-style: normal; font-weight: 300; }
+
+.mentions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2vw, 24px); margin: 0; padding: 0; list-style: none; }
+.mention { display: flex; flex-direction: column; height: 100%; color: var(--ink); text-decoration: none; background: var(--paper-card); border: 1.5px solid var(--ink-line); transition: border-color .25s, transform .35s cubic-bezier(.16, 1, .3, 1); }
+.mention:hover { border-color: var(--ink); transform: translateY(-3px); }
+.mention:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* the paper's own logo, grey until you point at it */
+.mention-logo { display: grid; place-items: center; height: 120px; padding: 0 28px; border-bottom: 1px dashed var(--ink-line); }
+.mention-logo img { max-width: 100%; max-height: 38px; width: auto; object-fit: contain; filter: grayscale(1) contrast(1.15); opacity: .78; transition: filter .3s, opacity .3s; }
+.mention-logo img[src*="our-bangalore"], .mention-logo img[src*="whats-hot"] { max-height: 62px; }
+.mention:hover .mention-logo img, .mention:focus-visible .mention-logo img { filter: none; opacity: 1; }
+.mention-text { flex: 1; display: flex; flex-direction: column; gap: 8px; padding: 20px 22px 18px; }
+.mention-text small { font-size: 13.5px; color: var(--ink-soft); }
+.mention-text b { font: 400 clamp(19px, 1.5vw, 22px)/1.3 var(--font-brand); color: var(--ink); }
+.mention-go { margin-top: auto; padding-top: 14px; font-size: 14.5px; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; text-decoration-color: var(--ink-line); }
+.mention:hover .mention-go { text-decoration-color: currentColor; }
+
+@media (max-width: 900px) { .mentions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) {
+  .mentions { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .mention-logo { height: 96px; }
+}
+
+/* the latest story, across the full width: logo on the left, the story beside it */
+.mention-feature { grid-column: 1 / -1; }
+.mention-feature .mention { flex-direction: row; }
+.mention-feature .mention-logo { flex: 0 0 36%; height: auto; min-height: 220px; border-bottom: 0; border-right: 1px dashed var(--ink-line); }
+.mention-feature .mention-logo img { max-height: 120px; }
+.mention-feature .mention-text { justify-content: center; gap: 12px; padding: clamp(24px, 3vw, 44px); }
+.mention-feature .mention-text b { font-size: clamp(24px, 2.4vw, 34px); line-height: 1.2; max-width: 30ch; }
+.mention-feature .mention-go { margin-top: 6px; }
+@media (max-width: 560px) {
+  .mention-feature .mention { flex-direction: column; }
+  .mention-feature .mention-logo { flex: none; min-height: 150px; border-right: 0; border-bottom: 1px dashed var(--ink-line); }
+  .mention-feature .mention-logo img { max-height: 90px; }
+}

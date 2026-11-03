@@ -1,0 +1,182 @@
+{
+ "all": {
+  "title": "All",
+  "handles": [
+   "ammas-spice-box",
+   "bajra-flour-500g-made-from-whole-pearl-millet-freshly-milled",
+   "bajra-laddu-250g-gluten-free-traditionally-made",
+   "black-pepper-whole-coorg-125g-sundried-ungarbled",
+   "canephora-coffee-robusta-dark-roast-naturals-200g",
+   "canephora-coffee-robusta-medium-roast-anaerobic-naturals-200g",
+   "canephora-coffee-robusta-medium-roast-frozen-cherry-200g",
+   "canephora-coffee-robusta-medium-roast-lactic-fermentation-200g",
+   "canephora-coffee-robusta-medium-roast-naturals-200g",
+   "chinnor-rice-1kg-naturally-aromatic-traditional-rice-for-deep-traditions",
+   "coffee-blossom-honey-200g-small-batch-harvest-single-origin",
+   "connected-coffee-drip-bags-canephora-coffee-robusta-medium-roast-anoxic-naturals",
+   "green-elaichi-green-cardamom-75g-sundried-extra-bold",
+   "indrayani-rice-1kg-aromatic-heritage-grain-naturally-grown",
+   "kachampuli-300ml-tangy-potent-traditionally-fermented",
+   "millet-mithai",
+   "multi-floral-raw-honey-500g-apis-dorsata-wild-purely-sourced-copy",
+   "mysore-mallige-rice-5kg-protein-fibre-rich-unpolished-100-natural",
+   "navara-rice",
+   "navara-red-rice-1kg-diabetic-friendly-natural-quality-healthy-food-high-in-fibre-pesticide-chemical-free",
+   "peanut-butter-crunchy-250g-kadiri-nath-peanuts-slow-roasted-naturally-delicious-copy",
+   "peanut-butter-crunchy-250g-friends-of-beforest-slow-roasted-naturally-delicious",
+   "pigeon-pea-toor-dal-500gm",
+   "ragi-laddu-250g-traditionally-made-sprouted-millet-goodness",
+   "red-chili-powder-500gm",
+   "red-rice-white-rice",
+   "rosella-herbal-tea-50g",
+   "small-batch-rosella-jam-artisanally-crafted-500g",
+   "sprouted-ragi-mix-500g-freshly-milled-gluten-free-supergrain",
+   "sweet-spicy-nutty",
+   "the-flour-family",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured-copy",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured",
+   "turmeric-powder-500g-made-from-whole-turmeric-100-natura",
+   "whole-wheat-flour-1-kg-premium-sharbati-freshly-milled",
+   "wild-whole-mustard-coorg-250g-100-natural"
+  ]
+ },
+ "age-old-condiments": {
+  "title": "Artisanal Condiments",
+  "handles": [
+   "coffee-blossom-honey-200g-small-batch-harvest-single-origin",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured",
+   "peanut-butter-crunchy-250g-friends-of-beforest-slow-roasted-naturally-delicious",
+   "rosella-herbal-tea-50g",
+   "kachampuli-300ml-tangy-potent-traditionally-fermented",
+   "bajra-laddu-250g-gluten-free-traditionally-made",
+   "ragi-laddu-250g-traditionally-made-sprouted-millet-goodness",
+   "small-batch-rosella-jam-artisanally-crafted-500g",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured-copy",
+   "peanut-butter-crunchy-250g-kadiri-nath-peanuts-slow-roasted-naturally-delicious-copy"
+  ]
+ },
+ "central-highlands-produce": {
+  "title": "Central Highlands Produce",
+  "handles": [
+   "bajra-laddu-250g-gluten-free-traditionally-made",
+   "whole-wheat-flour-1-kg-premium-sharbati-freshly-milled",
+   "chinnor-rice-1kg-naturally-aromatic-traditional-rice-for-deep-traditions",
+   "indrayani-rice-1kg-aromatic-heritage-grain-naturally-grown",
+   "bajra-flour-500g-made-from-whole-pearl-millet-freshly-milled"
+  ]
+ },
+ "curated-combos": {
+  "title": "Curated Combos",
+  "handles": [
+   "millet-mithai",
+   "red-rice-white-rice",
+   "the-flour-family",
+   "sweet-spicy-nutty",
+   "ammas-spice-box"
+  ]
+ },
+ "hyderabad": {
+  "title": "Deccan Plateau Produce",
+  "handles": [
+   "rosella-herbal-tea-50g",
+   "mysore-mallige-rice-5kg-protein-fibre-rich-unpolished-100-natural",
+   "navara-rice",
+   "pigeon-pea-toor-dal-500gm",
+   "sprouted-ragi-mix-500g-freshly-milled-gluten-free-supergrain",
+   "red-chili-powder-500gm",
+   "turmeric-powder-500g-made-from-whole-turmeric-100-natura",
+   "wild-whole-mustard-coorg-250g-100-natural",
+   "small-batch-rosella-jam-artisanally-crafted-500g",
+   "peanut-butter-crunchy-250g-friends-of-beforest-slow-roasted-naturally-delicious",
+   "ragi-laddu-250g-traditionally-made-sprouted-millet-goodness",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured",
+   "navara-red-rice-1kg-diabetic-friendly-natural-quality-healthy-food-high-in-fibre-pesticide-chemical-free",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured-copy",
+   "peanut-butter-crunchy-250g-kadiri-nath-peanuts-slow-roasted-naturally-delicious-copy"
+  ]
+ },
+ "discount_eligible": {
+  "title": "DISCOUNT_ELIGIBLE",
+  "handles": [
+   "small-batch-rosella-jam-artisanally-crafted-500g",
+   "navara-rice",
+   "mysore-mallige-rice-5kg-protein-fibre-rich-unpolished-100-natural",
+   "black-pepper-whole-coorg-125g-sundried-ungarbled",
+   "green-elaichi-green-cardamom-75g-sundried-extra-bold",
+   "connected-coffee-drip-bags-canephora-coffee-robusta-medium-roast-anoxic-naturals",
+   "turmeric-powder-500g-made-from-whole-turmeric-100-natura",
+   "wild-whole-mustard-coorg-250g-100-natural",
+   "rosella-herbal-tea-50g",
+   "red-chili-powder-500gm",
+   "sprouted-ragi-mix-500g-freshly-milled-gluten-free-supergrain",
+   "pigeon-pea-toor-dal-500gm",
+   "bajra-laddu-250g-gluten-free-traditionally-made",
+   "peanut-butter-crunchy-250g-friends-of-beforest-slow-roasted-naturally-delicious",
+   "whole-wheat-flour-1-kg-premium-sharbati-freshly-milled",
+   "kachampuli-300ml-tangy-potent-traditionally-fermented",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured",
+   "canephora-coffee-robusta-medium-roast-frozen-cherry-200g",
+   "canephora-coffee-robusta-medium-roast-anaerobic-naturals-200g",
+   "canephora-coffee-robusta-dark-roast-naturals-200g",
+   "ragi-laddu-250g-traditionally-made-sprouted-millet-goodness",
+   "canephora-coffee-robusta-medium-roast-lactic-fermentation-200g",
+   "canephora-coffee-robusta-medium-roast-naturals-200g",
+   "chinnor-rice-1kg-naturally-aromatic-traditional-rice-for-deep-traditions",
+   "indrayani-rice-1kg-aromatic-heritage-grain-naturally-grown",
+   "peanut-butter-crunchy-250g-kadiri-nath-peanuts-slow-roasted-naturally-delicious-copy",
+   "tomato-pickle-250g-traditionally-crafted-slow-cured-copy",
+   "navara-red-rice-1kg-diabetic-friendly-natural-quality-healthy-food-high-in-fibre-pesticide-chemical-free",
+   "bajra-flour-500g-made-from-whole-pearl-millet-freshly-milled"
+  ]
+ },
+ "native-grains-cereals-and-pulses": {
+  "title": "Native Grains, Cereals and Pulses",
+  "handles": [
+   "chinnor-rice-1kg-naturally-aromatic-traditional-rice-for-deep-traditions",
+   "navara-red-rice-1kg-diabetic-friendly-natural-quality-healthy-food-high-in-fibre-pesticide-chemical-free",
+   "indrayani-rice-1kg-aromatic-heritage-grain-naturally-grown",
+   "navara-rice",
+   "mysore-mallige-rice-5kg-protein-fibre-rich-unpolished-100-natural",
+   "pigeon-pea-toor-dal-500gm",
+   "sprouted-ragi-mix-500g-freshly-milled-gluten-free-supergrain",
+   "whole-wheat-flour-1-kg-premium-sharbati-freshly-milled",
+   "bajra-flour-500g-made-from-whole-pearl-millet-freshly-milled"
+  ]
+ },
+ "single-origin-specialty-coffee": {
+  "title": "Single Origin Specialty Coffee & Tea",
+  "handles": [
+   "canephora-coffee-robusta-medium-roast-anaerobic-naturals-200g",
+   "canephora-coffee-robusta-medium-roast-frozen-cherry-200g",
+   "canephora-coffee-robusta-medium-roast-lactic-fermentation-200g",
+   "canephora-coffee-robusta-dark-roast-naturals-200g",
+   "canephora-coffee-robusta-medium-roast-naturals-200g",
+   "connected-coffee-drip-bags-canephora-coffee-robusta-medium-roast-anoxic-naturals"
+  ]
+ },
+ "poomaale-collective-produce": {
+  "title": "Western Ghats Produce",
+  "handles": [
+   "connected-coffee-drip-bags-canephora-coffee-robusta-medium-roast-anoxic-naturals",
+   "green-elaichi-green-cardamom-75g-sundried-extra-bold",
+   "black-pepper-whole-coorg-125g-sundried-ungarbled",
+   "kachampuli-300ml-tangy-potent-traditionally-fermented",
+   "canephora-coffee-robusta-medium-roast-lactic-fermentation-200g",
+   "canephora-coffee-robusta-medium-roast-frozen-cherry-200g",
+   "canephora-coffee-robusta-dark-roast-naturals-200g",
+   "canephora-coffee-robusta-medium-roast-anaerobic-naturals-200g",
+   "canephora-coffee-robusta-medium-roast-naturals-200g",
+   "coffee-blossom-honey-200g-small-batch-harvest-single-origin"
+  ]
+ },
+ "wholesome-spices": {
+  "title": "Whole(some) Spices",
+  "handles": [
+   "black-pepper-whole-coorg-125g-sundried-ungarbled",
+   "green-elaichi-green-cardamom-75g-sundried-extra-bold",
+   "turmeric-powder-500g-made-from-whole-turmeric-100-natura",
+   "wild-whole-mustard-coorg-250g-100-natural",
+   "red-chili-powder-500gm"
+  ]
+ }
+}

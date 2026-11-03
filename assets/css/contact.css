@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Contact page (contact.html): three ways to reach us, a message form,
+   and the address, quick help and socials beside it.
+   ========================================================================== */
+.contact-page { padding: clamp(36px, 6svh, 64px) var(--pad) var(--chap-pad); }
+
+/* heading */
+.contact-head { display: grid; justify-items: center; gap: 12px; max-width: 980px; margin: 0 auto clamp(30px, 5svh, 48px); text-align: center; }
+.contact-head .kicker { margin: 0; }
+.contact-head h1 { font-size: clamp(40px, 4.4vw, 66px); line-height: 1.02; text-wrap: balance; }
+.contact-head h1 em { font-style: normal; font-weight: 300; }
+.contact-head .lead { margin: 0; max-width: 64ch; text-wrap: balance; font-size: clamp(16px, 1.2vw, 18px); color: var(--ink-soft); }
+.contact-head .contact-faq { margin-top: 4px; font-size: 16px; }
+
+/* three ways to reach us */
+.reach { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px); margin: 0 0 clamp(28px, 4svh, 44px); padding: 0; list-style: none; }
+.reach-card { position: relative; display: grid; align-content: start; gap: 6px; height: 100%; padding: clamp(22px, 2.2vw, 30px); text-decoration: none; color: var(--ink);
+  background: var(--paper-card); border: 1.5px solid var(--ink-line); transition: border-color .25s, transform .3s var(--ease), box-shadow .3s; }
+.reach-card:hover { border-color: var(--ink); transform: translateY(-3px); box-shadow: 0 22px 36px -28px rgba(60, 25, 10, .55); }
+.reach-icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 10px; border-radius: 50%; border: 1.5px solid var(--ink-line); color: var(--accent-deep); }
+.reach-icon svg { width: 22px; height: 22px; }
+.reach-kind { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent-deep); }
+.reach-card b { font-weight: 400; font-size: clamp(24px, 2vw, 30px); line-height: 1.1; }
+.reach-detail { font-size: 17px; color: var(--ink-soft); }
+.reach-go { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding-top: 14px; border-top: 1.5px dashed var(--ink-line); font-size: 15px; color: var(--ink); }
+.reach-go svg { width: 16px; height: 16px; transition: translate .25s var(--ease); }
+.reach-card:hover .reach-go svg { translate: 4px 0; }
+/* WhatsApp is the quickest: it gets the brand red */
+.reach-card--wa { color: #fff1e4; background: #8c2a1e var(--noise); border-color: transparent; box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, .2), inset 0 0 60px rgba(0, 0, 0, .2); }
+.reach-card--wa:hover { border-color: transparent; box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, .2), inset 0 0 60px rgba(0, 0, 0, .2), 0 22px 36px -24px rgba(60, 25, 10, .7); }
+.reach-card--wa .reach-icon { border-color: rgba(255, 230, 210, .45); color: #fff1e4; }
+.reach-card--wa .reach-kind { color: #ffb194; }
+.reach-card--wa .reach-detail { color: #f0d6c3; }
+.reach-card--wa .reach-go { color: #fff1e4; border-top-color: rgba(255, 230, 210, .3); }
+
+/* form + side column */
+.contact-main { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(280px, 1fr); gap: clamp(18px, 2.4vw, 32px); align-items: start; }
+.contact-form { display: grid; gap: 18px; padding: clamp(24px, 3vw, 40px); background: var(--paper-card); border: 1.5px solid var(--ink-line); }
+.cf-head .kicker { margin: 0 0 8px; }
+.cf-head h2 { font-size: clamp(28px, 2.6vw, 40px); }
+.cf-head h2 em { font-style: normal; font-weight: 300; }
+.cf-topics { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; border: 0; }
+.cf-topics legend { width: 100%; margin-bottom: 10px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); }
+.cf-topics label { position: relative; cursor: pointer; }
+.cf-topics input { position: absolute; opacity: 0; pointer-events: none; }
+.cf-topics span { display: inline-block; padding: 9px 16px; border: 1.5px solid var(--ink-line); font-size: 15.5px; color: var(--ink); transition: background .2s, border-color .2s, color .2s; }
+.cf-topics label:hover span { border-color: var(--ink); }
+.cf-topics input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--paper-card); }
+.cf-topics input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.cf-field { display: grid; gap: 7px; }
+.cf-field > span { font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); }
+.cf-field small { letter-spacing: .04em; text-transform: none; font-size: 12.5px; }
+.cf-field input, .cf-field textarea { width: 100%; padding: 13px 14px; border: 1.5px solid var(--ink-line); border-radius: 0; background: var(--paper); color: var(--ink);
+  font: 400 17px/1.4 var(--font-brand); transition: border-color .2s, background .2s; }
+.cf-field textarea { resize: vertical; min-height: 140px; }
+.cf-field input:focus, .cf-field textarea:focus { outline: none; border-color: var(--ink); background: #fffaf3; }
+.cf-order[hidden] { display: none; }
+.cf-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; padding-top: 4px; }
+.cf-foot .btn svg { width: 18px; height: 18px; }
+
+.contact-side { display: grid; gap: clamp(14px, 1.6vw, 20px); }
+.contact-side > section { padding: clamp(20px, 2.2vw, 28px); border: 1.5px solid var(--ink-line); }
+.contact-side .kicker { display: block; margin: 0 0 12px; }
+.visit .reach-icon { margin-bottom: 14px; }
+.visit address { margin: 0 0 16px; font-style: normal; font-size: 18px; line-height: 1.55; color: var(--ink); }
+.help-links ul { margin: 0; padding: 0; list-style: none; }
+.help-links a { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 0; text-decoration: none; color: var(--ink); border-top: 1px dashed var(--ink-line); }
+.help-links li:first-child a { border-top: 0; padding-top: 0; }
+.help-links b { display: block; font-weight: 400; font-size: 18px; }
+.help-links small { display: block; margin-top: 2px; font-size: 14px; color: var(--ink-soft); }
+.help-links svg { width: 18px; height: 18px; color: var(--accent-deep); transition: translate .25s var(--ease); }
+.help-links a:hover b { color: var(--accent-deep); }
+.help-links a:hover svg { translate: 4px 0; }
+.contact-socials { display: flex; flex-wrap: wrap; gap: 8px; }
+.contact-socials a { padding: 8px 14px; border: 1.5px solid var(--ink-line); color: var(--ink); text-decoration: none; font-size: 15.5px; transition: border-color .2s, background .2s; }
+.contact-socials a:hover { border-color: var(--ink); background: var(--paper-card); }
+
+@media (max-width: 960px) {
+  .reach { grid-template-columns: minmax(0, 1fr); }
+  .contact-main { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .cf-row { grid-template-columns: minmax(0, 1fr); }
+}

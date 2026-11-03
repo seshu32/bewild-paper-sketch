@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Curated combo detail page (combo.html) only.
+   It starts identical to the product page; every rule here is scoped to
+   body.pdp-combo, so combo-only changes never reach product.html.
+   ========================================================================== */
+
+/* ---- the story: the products in this combo, one per row, under the story text ---- */
+.pdp-combo .combo-inside { max-width: 62ch; margin-top: 10px; border-top: 1.5px solid var(--ink); border-bottom: 1.5px dashed var(--ink-line); }
+.pdp-combo .combo-inside summary { display: flex; align-items: center; gap: 10px; padding: 14px 0; cursor: pointer; list-style: none;
+  font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-deep); }
+.pdp-combo .combo-inside summary::-webkit-details-marker { display: none; }
+.pdp-combo .combo-inside summary span { color: var(--ink-soft); letter-spacing: .12em; font-size: 12px; }
+.pdp-combo .combo-inside summary::after { content: ""; width: 8px; height: 8px; margin: -4px 4px 0 auto; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  rotate: 45deg; transition: rotate .25s var(--ease), margin .25s var(--ease); }
+.pdp-combo .combo-inside[open] summary::after { rotate: 225deg; margin-top: 4px; }
+.pdp-combo .combo-inside ul { margin: 0; padding: 0 0 6px; list-style: none; }
+.pdp-combo .combo-inside li { display: grid; grid-template-columns: 58px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 12px 0; }
+.pdp-combo .combo-inside li + li { border-top: 1px dashed var(--ink-line); }
+.pdp-combo .combo-inside-media { display: block; width: 58px; height: 58px; background: var(--paper-2); border: 1px solid var(--ink-line); }
+.pdp-combo .combo-inside-media img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+.pdp-combo .combo-inside-name { display: block; font-size: 19px; line-height: 1.2; color: var(--ink); text-decoration: none; }
+.pdp-combo .combo-inside-name:hover { color: var(--accent-deep); }
+.pdp-combo .combo-inside-from { display: inline-block; margin-top: 4px; font-size: 14.5px; color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.pdp-combo span.combo-inside-from { text-decoration: none; color: var(--ink-soft); }
+.pdp-combo .combo-inside-size { align-self: start; padding-top: 2px; font-size: 16px; color: var(--ink-soft); white-space: nowrap; }
+
+/* ---- buy them separately: every product is equal here (no "this item" highlight) ---- */
+.pdp-combo #combo-separately .fbt-item:first-child { border-color: var(--ink-line); }
+.pdp-combo #combo-separately .fbt-item:not(.is-off) { border-color: var(--ink); }
+
+/* the combo is the main action; buying them one by one is the quiet second choice */
+.pdp-combo .fbt-total .fbt-or { margin-top: 4px; padding-top: 14px; border-top: 1px dashed rgba(255, 225, 205, .35); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #f0c9b3; }
+.pdp-combo .fbt-total .btn--ghost { color: #fff1e4; box-shadow: inset 0 0 0 1.5px rgba(255, 241, 228, .7); background: transparent; }
+.pdp-combo .fbt-total .btn--ghost:hover { background: rgba(255, 241, 228, .12); color: #fff1e4; }
+.pdp-combo .fbt-total .btn--ghost { white-space: nowrap; padding-inline: 16px; }
